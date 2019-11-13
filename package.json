@@ -5,9 +5,22 @@
   "main": "index.js",
   "scripts": {
     "build": "tsc",
-    "dev": "nodemon --inspect=5858 -r ts-node/register ./src/app.ts",
+    "dev": "node --inspect=5858 -r ts-node/register ./src/app.ts",
     "watch": "nodemon",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "**/*.test.ts",
+      "**/*.spec.ts",
+      ".git",
+      "node_modules"
+    ],
+    "watch": [
+      "src"
+    ],
+    "exec": "npm run dev",
+    "ext": "ts"
   },
   "author": "",
   "license": "ISC",
