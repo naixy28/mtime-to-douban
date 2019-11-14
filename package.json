@@ -24,6 +24,9 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/koa": "^2.0.52",
+    "@types/koa-json": "^2.0.18",
+    "@types/koa-logger": "^3.1.1",
     "@types/node": "^12.12.7",
     "@typescript-eslint/eslint-plugin": "^2.7.0",
     "@typescript-eslint/parser": "^2.7.0",
@@ -31,16 +34,16 @@
     "eslint-config-prettier": "^6.5.0",
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-prettier": "^3.1.1",
+    "koa-json": "^2.0.2",
     "nodemon": "^1.19.4",
     "prettier": "^1.19.1",
     "ts-node": "^8.5.0",
     "typescript": "^3.7.2"
   },
   "dependencies": {
-    "@types/koa": "^2.0.52",
+    "@types/koa-router": "^7.0.42",
     "koa": "^2.11.0",
     "koa-bodyparser": "^4.2.1",
-    "koa-json": "^2.0.2",
     "koa-logger": "^3.2.1",
     "koa-router": "^7.4.0"
   }
